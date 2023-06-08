@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --branco: #ffffff;
+    --cinza: #4b6d94;
+    --azul: #42b3b3;
+    --escuro: #0e0d0f;
+    --rosa: #e83f6f;
+    --amarelo: #f7e927;
+}
+
+body {
+    width: 100%;
+    background-color: var(--branco);
+}
+
+.fa {
+    cursor: pointer;
+    color: var(--azul);
+    font-size: 1.4rem;
+}
+
+.btn {
+    width: 100%;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+}
+
+.conteudo .logo {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo .logo a .fa {
+    font-size: 3rem;
+    color: var(--azul);
+}
+
+.conteudo .logo .scpd {
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: var(--escuro);
+}
+
+.busca {
+    width: 100%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busca h2 {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--escuro);
+    margin-bottom: 25px;
+    word-spacing: 5px;
+}
+
+.busca form {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgb(204, 204, 198);
+}
+
+.busca form input {
+    width: 84%;
+    outline: none;
+    border-radius: 0;
+    /* border: 1px solid var(--azul); */
+    border: 0;
+    border-radius: 4px 0 0 4px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 6px;
+}
+
+.busca form .fa {
+    width: 16%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4px;
+    border-radius: 0 4px 4px 0;
+    color: var(--branco);
+    background-color: var(--azul);
+    padding: 8px;
+}
+
+.conteudo .rodape {
+    width: 100%;
+    position: relative;
+    top: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteudo .rodape .dev {
+    font-family: monospace;
+    color: var(--escuro);
+    font-style: italic;
+}
+
+.conteudo .rodape .dev a {
+    font-size: 14px;
+    color: var(--azul);
+}
+
+@media screen and (min-width: 540px) {
+
+    .conteudo {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15%;
+        box-shadow: 1px 1px 20px #babdc0;
+        border-radius: 5px;
+    }
+
+    .conteudo .logo {
+        top: 30px;
+    }
+
+    .conteudo .logo a .fa {
+        font-size: 4rem;
+    }
+
+    .conteudo .logo .scpd {
+        font-size: 1.4rem;
+        letter-spacing: 8px;
+    }
+
+
+    .busca {
+        top: 20%;
+    }
+
+    .busca h2 {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 35px;
+        word-spacing: 5px;
+        letter-spacing: -1px;
+    }
+
+    .busca form {
+        width: 90%;
+    }
+
+    .busca form input {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 8px;
+    }
+
+    .busca form .fa {
+        width: 16%;
+        font-size: 1.6rem;
+        padding: 11px;
+    }
+
+    .conteudo .rodape {
+        top: 58%;
+    }
+
+    .conteudo .rodape .dev a {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (min-width: 940px) {
+    .busca form {
+        width: 75%;
+    }
+}

@@ -1,0 +1,22 @@
+@import url(./login.css);
+.login {
+        position: absolute;
+        top: 1%;
+        width: 100%;
+}
+.login form h2{
+        font-size: 16px;
+}
+
+@media screen and (min-width: 540px) {
+        .login {
+            position: absolute;
+            top: 5%;
+            left: 10%;
+            width: 80%;
+        }
+
+        .login form h2{
+                font-size: 1.4rem;
+        }
+}    

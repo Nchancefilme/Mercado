@@ -1,0 +1,134 @@
+:root {
+        --branco: #ffffff;
+        --cinza: #afb4b9;
+        --azul: #42b3b3;
+        --preto: #111111;
+        --escuro: #646969;
+}
+
+.card-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+.card-main section {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.card-main section h2 {
+        width: 100%;
+        padding: 10px;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 5px;
+        color: var(--branco);
+        background-color: var(--escuro);
+}
+
+.card-main section .my-card {
+        width: 100%;
+        background-color: var(--branco);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+}
+
+.card-main section .my-card .my-image-card {
+        width: 333px;
+        max-height: 480px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--azul);
+        margin: 20px 0;
+        padding-bottom: 20px;
+        border-radius: 5px;
+}
+
+.card-main section .my-card .my-image-card img {
+       width: 100%;
+        height: 100%;
+        border-radius: 5px;
+}
+
+
+.card-main section .my-card .my-image-card .my-data {
+        width: 80%;
+}
+
+.card-main section .my-card .my-image-card h3 {
+        padding-bottom: 10px;
+        padding-top: 5px;
+        color: var(--branco);
+}
+
+.card-main section .my-card .my-image-card a {
+        width: 100%;
+        box-shadow: 2px 2px 10px var(--cinza);
+        color: var(--preto);
+        text-transform: capitalize;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+        .card-main section h2 {
+                margin-top: 40px;
+                font-size: 15px;
+        }
+
+        .card-main section .my-card {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+        }
+
+        .card-main section .my-card .my-image-card {
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 20px 2px;
+        }
+
+
+        .card-main section .my-card .my-image-card h3 {
+                font-size: 20px;
+        }
+
+        .card-main section .my-card .my-image-card a {
+                font-size: 20px;
+                padding: 10px;
+        }
+
+}
+
+
+.vazio{
+        width: 100%;
+        position: relative;
+        background-color: var(--azul);
+        color: var(--branco);
+        padding: 15px 35px;
+        margin: 10px 0;
+        font-size: 20px;
+        text-align: center;
+}
+
+.vazio p a{
+        font-weight: bold;
+        color: var(--branco);
+        text-decoration: underline;
+}

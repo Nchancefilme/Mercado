@@ -1,0 +1,4 @@
+@import url(./conta.css);
+input[type="text"]{
+    text-transform: capitalize;
+}
